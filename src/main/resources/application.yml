@@ -1,0 +1,22 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: nop4ssword
+    url: jdbc:mysql://ns1.cav2k5syqqot.ap-northeast-1.rds.amazonaws.com/nsdb1?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+
+server:
+  port : 5000
